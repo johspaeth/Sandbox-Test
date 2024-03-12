@@ -5,20 +5,19 @@ projects:
       location: https://prover.certora.com/zipOutput/53900/355fbf7daf48487b98530919a747414c/
 
 components:
-  - name: certora-container
+  - name: certoracontainer
     container:
       image certora/certora-prover
         
 commands:
   - id: certora run
     exec:
-        command: certoraRun
-        component: certora-container
+        commandLine: certoraRun
+        component: certoracontainer
 
 attributes:
   .vscode/extensions.json: |
     {
-      #A VS code plugin published on https://open-vsx.org/ -> requires deployment there
       "recommendations": [
         "JuanBlanco.solidity", "redhat.java"
       ]
