@@ -7,7 +7,7 @@ projects:
 components:
   - name: certoracontainer
     container:
-      image certora/certora-prover
+      image: certora/certora-prover
         
 commands:
   - id: certora run
