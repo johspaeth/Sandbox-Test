@@ -7,7 +7,7 @@ projects:
 components:
   - name: certoracontainer
     container:
-      image: certora/certora-prover
+      image: alpine
         
 commands:
   - id: certorarun
