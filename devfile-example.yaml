@@ -4,17 +4,6 @@ projects:
     zip:
       location: https://prover.certora.com/zipOutput/53900/355fbf7daf48487b98530919a747414c/
 
-components:
-  - name: certoracontainer
-    container:
-      image: alpine
-        
-commands:
-  - id: certorarun
-    exec:
-        commandLine: certoraRun
-        component: certoracontainer
-
 attributes:
   .vscode/extensions.json: |
     {
