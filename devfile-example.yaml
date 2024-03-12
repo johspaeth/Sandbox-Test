@@ -5,12 +5,9 @@ projects:
       location: https://prover.certora.com/zipOutput/53900/355fbf7daf48487b98530919a747414c/
 
 components:
-  - name certora-container
+  - name: certora-container
     container:
-      image: certora/certora-prover
-      env:
-      - name: CERTORA_KEY
-        value: TODO
+      image certora/certora-prover
         
 commands:
   - id: certora run
