@@ -10,7 +10,7 @@ components:
       image: certora/certora-prover
         
 commands:
-  - id: certora run
+  - id: certorarun
     exec:
         commandLine: certoraRun
         component: certoracontainer
