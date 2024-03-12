@@ -2,7 +2,7 @@ schemaVersion: 2.2.2
 projects:
   - name: demofolder
     zip:
-      location: https://prover.certora.com/zipOutput/53900/355fbf7daf48487b98530919a747414c/
+      location: https://github.com/johspaeth/Sandbox-Test/raw/main/Archive.zip
 
 attributes:
   .vscode/extensions.json: |
