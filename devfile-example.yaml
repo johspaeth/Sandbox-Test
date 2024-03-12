@@ -1,24 +1,20 @@
 schemaVersion: 2.2.2
 projects:
-  - name: demoFolder
+  - name: demofolder
     zip:
-      #A test project for now, should be replaced by the path to the Zip file containing the actual project.
       location: https://prover.certora.com/zipOutput/53900/355fbf7daf48487b98530919a747414c/
 
 components:
-  - mountSources: true
-    alias: certora-container
-    image: 'certora/certora-prover'
-    env:
-      - value: >-
-          TODO          
-        name: CERTORA_KEY
-apiVersion: 1.0.0
+  - name certora-container
+    container:
+      image: certora/certora-prover
+      env:
+      - name: CERTORA_KEY
+        value: TODO
+        
 commands:
-  - name: certora run
-    actions:
-      - workdir: '${CHE_PROJECTS_ROOT}/demoFolder'
-        type: exec
+  - id: certora run
+    exec:
         command: certoraRun
         component: certora-container
 
