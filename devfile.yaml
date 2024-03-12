@@ -1,0 +1,15 @@
+schemaVersion: "2.2.2"
+projects:
+  - name: "ExampleSolProject"
+    zip:
+      #A test project for now, should be replaced by the path to the Zip file containing the actual project.
+      location: https://drive.google.com/file/d/1vC7L634arbeOrIpCCjPLYb4mkQLPpWLM/view?usp=sharing
+
+attributes:
+  .vscode/extensions.json: |
+    {
+      #A VS code plugin published on https://open-vsx.org/ -> requires deployment there
+      "recommendations": [
+        "JuanBlanco.solidity"
+      ]
+    }
