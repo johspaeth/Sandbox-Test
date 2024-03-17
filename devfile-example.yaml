@@ -8,7 +8,8 @@ components:
   - name: certora-container
     container:
       image: johspaeth/basecontainer
-      command: ['sleep', 'infinity']
+      command: [ "/bin/bash", "-c", "--" ]
+      args: [ "while true; do sleep 30; done;" ]
 
 attributes:
   .vscode/extensions.json: |
