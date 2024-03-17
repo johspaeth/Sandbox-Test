@@ -5,12 +5,12 @@ projects:
       location: https://github.com/johspaeth/Sandbox-Test/raw/main/Archive.zip
 
 components:
-  - name certora-container
+  - name: certora-container
     container:
-      image: ksin751119/certora-ci-base
+      image: ksin751119/certira-ci-base
       env:
-      - name: CERTORA_KEY
-        value: TODO
+        - name: CERTORAKEY
+          value: value
 
 commands:
   - id: certora run
