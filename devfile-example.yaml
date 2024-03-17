@@ -8,8 +8,7 @@ components:
   - name: certora-container
     container:
       image: johspaeth/basecontainer
-      args: ['sleep', 'infinity']
-
+      command: ['sleep', 'infinity']
 
 attributes:
   .vscode/extensions.json: |
