@@ -8,17 +8,8 @@ components:
   - name: certora-container
     container:
       image: johspaeth/basecontainer
-      command: ['tail']
-      args: ['-f', '/dev/null']
-      env:
-        - name: CERTORAKEY
-          value: value
+      args: ['sleep', 'infinity']
 
-commands:
-  - id: certorarun
-    exec:
-        commandLine: certoraRun
-        component: certora-container
 
 attributes:
   .vscode/extensions.json: |
