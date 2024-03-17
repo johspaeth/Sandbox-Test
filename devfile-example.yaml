@@ -15,7 +15,7 @@ components:
 commands:
   - id: certora run
     exec:
-        command: certoraRun
+        commandLine: certoraRun
         component: certora-container
 
 attributes:
