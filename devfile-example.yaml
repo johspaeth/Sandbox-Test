@@ -7,7 +7,7 @@ projects:
 components:
   - name: certora-container
     container:
-      image: ksin751119/certira-ci-base
+      image: johspaeth/basecontainer
       env:
         - name: CERTORAKEY
           value: value
