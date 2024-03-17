@@ -4,6 +4,20 @@ projects:
     zip:
       location: https://github.com/johspaeth/Sandbox-Test/raw/main/Archive.zip
 
+components:
+  - name certora-container
+    container:
+      image: ksin751119/certora-ci-base
+      env:
+      - name: CERTORA_KEY
+        value: TODO
+
+commands:
+  - id: certora run
+    exec:
+        command: certoraRun
+        component: certora-container
+
 attributes:
   .vscode/extensions.json: |
     {
