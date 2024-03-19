@@ -7,9 +7,11 @@ projects:
 components:
   - name: certora-container
     container:
-      image: ubuntu:latest
+      image: quay.io/johspaeth/basecontainer
       command: [ "/bin/bash", "-c", "--" ]
       args: [ "while true; do sleep 30; done;" ]
+      memoryLimit: 1024Mi
+      mountSources: true
 
 attributes:
   .vscode/extensions.json: |
