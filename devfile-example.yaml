@@ -7,7 +7,7 @@ projects:
 components:
   - name: certora-container
     container:
-      image: docker pull johspaeth/basecontainer:latest
+      image: johspaeth/basecontainer:latest
       command: [ "/bin/bash", "-c", "--" ]
       args: [ "while true; do sleep 30; done;" ]
       memoryLimit: 1024Mi
