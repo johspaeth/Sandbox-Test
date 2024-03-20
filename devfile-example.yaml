@@ -7,7 +7,7 @@ projects:
 components:
   - name: certora-container
     container:
-      image: johspaeth/basecontainer@sha256:75cdd3510fdf5ae2a13c7d37e451174ed2094605ce9daf163443c0dad8402792
+      image: johspaeth/basecontainer@sha256:18282c7e96e89696fe5bb780c8dfe7c212d4e9d5b2816e8cf754793e9699a197
       command: [ "/bin/bash", "-c", "--" ]
       args: [ "while true; do sleep 30; done;" ]
       memoryLimit: 1024Mi
