@@ -7,7 +7,7 @@ projects:
 components:
   - name: certora-container
     container:
-      image: python@sha256:a21c85b61ab196848d1db926edc6ed76d8ee269985bf118a8cb4794674eee881
+      image: johspaeth/basecontainer@sha256:75cdd3510fdf5ae2a13c7d37e451174ed2094605ce9daf163443c0dad8402792
       command: [ "/bin/bash", "-c", "--" ]
       args: [ "while true; do sleep 30; done;" ]
       memoryLimit: 1024Mi
