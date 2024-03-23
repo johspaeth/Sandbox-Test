@@ -1,7 +1,7 @@
 schemaVersion: 2.2.2
 
 metadata:
-  name: sandbox-test-etos
+  name: sandbox-test-ftos
   namespace: johspaeth-dev
 
 components:
@@ -16,12 +16,11 @@ components:
       memoryLimit: 1024Mi
       mountSources: true
 
-
 commands:
   - id: certora
     exec:
       component: certora-container
-      commandLine: "certoraRun"
+      commandLine: certoraRun
       workingDir: "${PROJECTS_ROOT}"
 
 attributes:
