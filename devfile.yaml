@@ -1,5 +1,8 @@
 schemaVersion: 2.2.2
-projects:
+
+metadata:
+  name: sandbox-test-awos
+  namespace: johspaeth-dev
 
 attributes:
   .vscode/extensions.json: |
