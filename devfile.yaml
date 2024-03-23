@@ -1,7 +1,7 @@
 schemaVersion: 2.2.2
 
 metadata:
-  name: sandbox-test-atos
+  name: sandbox-test-btos
   namespace: johspaeth-dev
 
 components:
