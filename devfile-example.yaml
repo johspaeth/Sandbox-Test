@@ -2,7 +2,7 @@ schemaVersion: 2.2.2
 projects:
   - name: demofolder
     zip:
-      location: https://github.com/johspaeth/Sandbox-Test/raw/main/Archive.zip
+      location: https://github.com/johspaeth/Sandbox-Test/raw/main/ExampleProject.zip
 
 components:
   - name: certora-container
@@ -17,6 +17,6 @@ attributes:
   .vscode/extensions.json: |
     {
       "recommendations": [
-        "JuanBlanco.solidity", "redhat.java"
+        "JuanBlanco.solidity", "redhat.java", "sample-extension.sample-extension"
       ]
     }
