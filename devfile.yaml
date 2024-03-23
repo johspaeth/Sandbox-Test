@@ -1,10 +1,13 @@
 schemaVersion: 2.2.2
 
 metadata:
-  name: sandbox-test-dtos
+  name: sandbox-test-etos
   namespace: johspaeth-dev
 
 components:
+  - name: universal-developer-image
+    container:
+      image: registry.redhat.io/devspaces/udi-rhel8@sha256:720d4bff5924ac76af5b25606ebfb2bcf853212af6c8202f591c4954a88f57f6
   - name: certora-container
     container:
       image: johspaeth/basecontainer-amd@sha256:3a1298713b8dbb6602a8f98cadf01226359bb1f0785434fe084d09932ba94e32
@@ -12,9 +15,6 @@ components:
       args: [ "while true; do sleep 30; done;" ]
       memoryLimit: 1024Mi
       mountSources: true
-  - name: universal-developer-image
-    container:
-      image: registry.redhat.io/devspaces/udi-rhel8@sha256:720d4bff5924ac76af5b25606ebfb2bcf853212af6c8202f591c4954a88f57f6
 
 
 commands:
@@ -29,6 +29,6 @@ attributes:
     {
       #A VS code plugin published on https://open-vsx.org/ -> requires deployment there
       "recommendations": [
-        "sample-extension.sample-extension"
+        "redhat.java", sample-extension.sample-extension"
       ]
     }
