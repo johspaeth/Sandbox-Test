@@ -1,0 +1,3 @@
+{
+  "extensions": ["Certora.vscode-certora-prover", "Certora.evmspec-lsp"]
+}
