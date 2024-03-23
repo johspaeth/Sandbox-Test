@@ -12,11 +12,3 @@ components:
       args: [ "while true; do sleep 30; done;" ]
       memoryLimit: 1024Mi
       mountSources: true
-
-attributes:
-  .vscode/extensions.json: |
-    {
-      "recommendations": [
-        "JuanBlanco.solidity", "redhat.java", "sample-extension.sample-extension"
-      ]
-    }
