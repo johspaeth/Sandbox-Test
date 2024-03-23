@@ -23,3 +23,12 @@ commands:
       component: certora-container
       commandLine: "certoraRun"
       workingDir: "${PROJECTS_ROOT}"
+
+attributes:
+  .vscode/extensions.json: |
+    {
+      #A VS code plugin published on https://open-vsx.org/ -> requires deployment there
+      "recommendations": [
+        "sample-extension.sample-extension"
+      ]
+    }
