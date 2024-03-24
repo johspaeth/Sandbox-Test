@@ -1,7 +1,7 @@
 schemaVersion: 2.2.2
 
 metadata:
-  name: sandbox-test-ftos
+  name: sandbox-test-gtos
   namespace: johspaeth-dev
 
 components:
