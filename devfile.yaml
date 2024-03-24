@@ -5,12 +5,9 @@ metadata:
   namespace: johspaeth-dev
 
 components:
-  - name: universal-developer-image
-    container:
-      image: registry.redhat.io/devspaces/udi-rhel8@sha256:720d4bff5924ac76af5b25606ebfb2bcf853212af6c8202f591c4954a88f57f6
   - name: certora-container
     container:
-      image: johspaeth/basecontainer-amd@sha256:3a1298713b8dbb6602a8f98cadf01226359bb1f0785434fe084d09932ba94e32
+      image: johspaeth/basecontainer@sha256:59c437b5c9f627fc4c7e0c2bf68e019895310dc609f95da88007df5a2c867cb9
       command: [ "/bin/bash", "-c", "--" ]
       args: [ "while true; do sleep 30; done;" ]
       memoryLimit: 1024Mi
